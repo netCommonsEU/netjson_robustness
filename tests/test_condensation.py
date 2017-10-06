@@ -153,9 +153,10 @@ class TestCondensateGraph(unittest.TestCase):
         self.obj.condensate_graph()
         n = 0
         for node, data in self.obj.condensed_graph.nodes(data=True):
+            print data
             if data["type"] == "cutpoint":
                 n += 1
-            if "component" in data["type"]:
+            if data["type"].startswith("size"):
                 n += int(data["size"])
         self.assertEqual(n, len(self.obj.graph))
 
