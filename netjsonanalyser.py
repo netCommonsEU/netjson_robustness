@@ -13,7 +13,8 @@ class ParsedGraph():
 
     def condensate_graph(self):
         graphs = []
-        connected_components = list(nx.connected_component_subgraphs(self.graph))
+        connected_components = list(nx.connected_component_subgraphs(
+                                    self.graph))
 
         counter = 0
         for comp in connected_components:
@@ -44,8 +45,9 @@ class ParsedGraph():
                 for n in cutpoints:
                     temp_g = comp.copy()
                     temp_g.remove_node(n)
-                    main_c = sorted([x for x in nx.connected_components(temp_g)],
-                                              key=lambda x: len(x))
+                    main_c = sorted([x for x in
+                                     nx.connected_components(temp_g)],
+                                     key=lambda x: len(x))
                     robustness = len(main_c[-1])
                     g.add_node(n)
                     g.node[n]["type"] = "cutpoint"
