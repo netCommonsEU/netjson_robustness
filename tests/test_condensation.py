@@ -143,11 +143,6 @@ class TestCondensateGraph(unittest.TestCase):
         self.obj.condensate_graph()
         self.assertEqual(len(self.obj.condensed_graph), 0)
 
-    def test_tags(self):
-        self.obj.condensate_graph()
-        for node, data in self.obj.condensed_graph.nodes(data=True):
-            self.assertTrue("type" in data)
-
     def test_size(self):
         self.obj = ParsedGraph(NetJsonParser(data=biconnected_graph))
         self.obj.condensate_graph()
@@ -155,15 +150,29 @@ class TestCondensateGraph(unittest.TestCase):
         for node, data in self.obj.condensed_graph.nodes(data=True):
             if data["type"] == "cutpoint":
                 n += 1
-            if data["type"].startswith("block"):
-                n += int(data["num_nodes"])
+            if data["type"] == "block":
+                n += int(data["nodes in block"])
         self.assertEqual(n, len(self.obj.graph))
 
     def test_connected(self):
         self.obj = ParsedGraph(NetJsonParser(data=biconnected_graph))
         self.obj.condensate_graph()
-        self.assertTrue(nx.is_connected(self.obj.graph) == \
+        self.assertTrue(nx.is_connected(self.obj.graph) ==
                         nx.is_connected(self.obj.condensed_graph))
+
+    def test_type(self):
+        self.obj = ParsedGraph(NetJsonParser(data=biconnected_graph))
+        self.obj.condensate_graph()
+        for node, data in self.obj.condensed_graph.nodes(data=True):
+            self.assertTrue(data["type"] in ("cutpoint", "block"))
+
+    def test_radius(self):
+        self.obj = ParsedGraph(NetJsonParser(data=biconnected_graph))
+        self.obj.condensate_graph()
+        for node, data in self.obj.condensed_graph.nodes(data=True):
+            self.assertTrue("radius" in data)
+            self.assertTrue(data["radius"] <= self.obj.max_node_size)
+            self.assertTrue(data["radius"] >= 1)
 
 
 if __name__ == "__main__":
