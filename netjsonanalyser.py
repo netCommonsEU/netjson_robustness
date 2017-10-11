@@ -17,13 +17,24 @@ class ParsedGraph():
                                     self.graph))
 
         counter = 0
+        if not len(connected_components):
+            self.condensed_graph = nx.Graph()
+            return
+
         for comp in connected_components:
+            if len(comp) == 1:
+                g = nx.Graph()
+                n = comp.nodes()[0]
+                g.add_node(n, {"type": "cutpoint"})
+                graphs.append(g)
+                continue
+
             g = nx.Graph()
             if not len(comp):
                 pass
             else:
                 components = list(nx.biconnected_components(comp))
-                max_component_size = max([len(x) for x in components])
+                max_component_size = max([len(x) for x in components if x])
                 component_dict = {}
                 cutpoints = set(nx.articulation_points(comp))
                 i = 0
@@ -51,7 +62,7 @@ class ParsedGraph():
                     robustness = len(main_c[-1])
                     g.add_node(n)
                     g.node[n]["type"] = "cutpoint"
-                    g.node[n]["Broken nodes"] = len(comp) - robustness - 1
+                    g.node[n]["Potential disconnected nodes"] = len(comp) - robustness - 1
                     for neigh in comp[n].keys():
                         if neigh in cutpoints:
                             g.add_edge(n, neigh, {'weight': 1})  # TODO weight
@@ -95,8 +106,8 @@ class ParsedGraph():
                 if data["type"] == "block":
                     blocks[n] = data["nodes in block"]
             labels = {}
-            for i, n in enumerate(sorted(blocks.items(), key=lambda x: -x[1])):
-                labels[n[0]] = "Block %d" % (counter + i)
+            for n in sorted(blocks.items(), key=lambda x: -x[1]):
+                labels[n[0]] = "Block %d" % counter
                 counter += 1
             nx.relabel_nodes(g, labels, copy=False)
             graphs.append(g)
