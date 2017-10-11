@@ -3,6 +3,7 @@ import networkx as nx
 
 class ParsedGraph():
     max_node_size = 100.0
+    min_node_size = 2
     cutpoint_size = {0: 2, 1: 5, 2: 7, 3: 10, 4: 12,
                      5: 14, 6: 14, 7: 14, 8: 14, 9: 14, 10: 14}
 
@@ -38,6 +39,7 @@ class ParsedGraph():
                 component_dict = {}
                 cutpoints = set(nx.articulation_points(comp))
                 i = 0
+
                 for c in sorted(components, key=lambda x: -len(x)):
                     nodes = set(c) - cutpoints
                     if not nodes:
@@ -50,7 +52,8 @@ class ParsedGraph():
                     g.node[node_id]["nodes in block"] = len(nodes)
                     g.node[node_id]["radius"] = max(int(self.max_node_size *
                                                     float(len(nodes)) /
-                                                    max_component_size), 1)
+                                                    max_component_size),
+                                                    self.min_node_size)
                     g.node[node_id]["type"] = "block"
 
                 for n in cutpoints:
@@ -82,18 +85,21 @@ class ParsedGraph():
             i = 0
             for n, data in g.nodes(data=True):
                 tobemerged = []
+                mergesize = 0
                 if data["type"] == "cutpoint":
                     for (neigh, ndata) in g[n].items():
                         if g.node[neigh]["type"] == "block" and \
-                           g.node[neigh]["nodes in block"] == 1:
+                           len(g[neigh]) == 1:
                             tobemerged.append(neigh)
-                if tobemerged:
+                            mergesize += g.node[neigh]["nodes in block"]
+                if len(tobemerged) > 1:
                     nodes = " ".join([g.node[y]["nodes"] for y in tobemerged])
                     g.add_node(i, {"nodes": nodes,
-                                   "nodes in block": len(tobemerged),
-                                   "radius": int(self.max_node_size *
+                                   "nodes in block": mergesize,
+                                   "radius": max(int(self.max_node_size *
                                                  float(len(tobemerged)) /
                                                  max_component_size),
+                                                 self.min_node_size),
                                    "type": "block"})
                     g.add_edge(i, n, {"weight": 1})  # TODO need weight here
                     i += 1
