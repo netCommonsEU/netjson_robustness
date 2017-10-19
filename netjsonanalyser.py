@@ -115,6 +115,6 @@ class ParsedGraph():
             for n in sorted(blocks.items(), key=lambda x: -x[1]):
                 labels[n[0]] = "Block %d" % counter
                 counter += 1
-            nx.relabel_nodes(g, labels, copy=False)
-            graphs.append(g)
+            r_g = nx.relabel_nodes(g, labels, copy=True)
+            graphs.append(r_g)
         self.condensed_graph = nx.union_all(graphs)
