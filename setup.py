@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
-  name='netjson-robustness-analyser',
-  packages=['netjson-robustness-analyser'],
+  name='netjson_robustness',
+  packages=['netjson_robustness'],
   version='0.1',
   description='A library to perform some robustness analysis on '
           'NetJSON-defined graphs',

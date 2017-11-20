@@ -7,7 +7,7 @@ A simple main documenting how to use thhis python package
 
 from netdiff import NetJsonParser
 from netdiff.utils import _netjson_networkgraph as to_netjson
-from netjsonanalyser import ParsedGraph
+from netjson_robustness.analyser import ParsedGraph
 import sys
 import json
 
