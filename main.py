@@ -14,7 +14,7 @@ import json
 
 NetJSON = sys.argv[1]  # a NetJSON graph file
 
-nj = NetJsonParser(NetJSON)
+nj = NetJsonParser(file=NetJSON)
 pg = ParsedGraph(nj)
 pg.condensate_graph()
 js = to_netjson(pg.netJSON.protocol, pg.netJSON.version, pg.netJSON.revision,
