@@ -1,0 +1,14 @@
+certifi==2017.7.27.1
+chardet==3.0.4
+coverage==4.4.1
+decorator==4.1.2
+humanize==0.5.1
+idna==2.6
+ipaddress==1.0.18
+libcnml==0.9.5
+netdiff==0.5.1
+networkx==1.11
+openvpn-status==0.1.1
+requests==2.18.4
+six==1.11.0
+urllib3==1.22
