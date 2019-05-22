@@ -1,4 +1,5 @@
 import networkx as nx
+import json
 
 
 class ParsedGraph():
@@ -25,9 +26,12 @@ class ParsedGraph():
         for comp in connected_components:
             if len(comp) == 1:
                 g = nx.Graph()
-                n = comp.nodes()[0]
-                g.add_node(n, {"type": "cutpoint"})
-                graphs.append(g)
+                c_nodes = comp.nodes().values()
+                if len(c_nodes) >= 1:
+                    n = c_nodes[0]
+                    g.add_node(n)
+                    g.node[n]["type"] = "cutpoint"
+                    graphs.append(g)
                 continue
 
             g = nx.Graph()
@@ -62,17 +66,44 @@ class ParsedGraph():
                     main_c = sorted([x for x in
                                      nx.connected_components(temp_g)],
                                      key=lambda x: len(x))
+
+                    connected_components2 = list(nx.connected_component_subgraphs(temp_g))
+                    cut_gat = False
+                    for com in connected_components2:
+                        nodes2 = com.nodes()
+                        x = False
+                        dataJson = json.loads(self.netJSON.json())
+                        for node2 in nodes2:
+                            for k in range(1,len(g.nodes())):
+                                if g.nodes.values()[k].has_key("nodes"):
+                                    if g.nodes.values()[k]['nodes'] == node2:
+                                        for i in range(1,len(dataJson["nodes"])):
+                                            if dataJson["nodes"][i].has_key("id") and dataJson["nodes"][i].has_key("properties") and dataJson["nodes"][i]["properties"].has_key("gateway"):
+                                                if dataJson["nodes"][i]["id"] == node2:
+                                                    if dataJson["nodes"][i]["properties"]["gateway"] == "true":
+                                                        x = True
+                                                        break
+                            if x == True: break
+
+                        if x == False:
+                            cut_gat = True
+                            break
+                        
                     robustness = len(main_c[-1])
                     g.add_node(n)
-                    g.node[n]["type"] = "cutpoint"
+                    if cut_gat == True:
+                        g.node[n]["type"] = "cutpoint_gateway"
+                    else:
+                        g.node[n]["type"] = "cutpoint"
+
                     g.node[n]["Potential disconnected nodes"] = len(comp) - robustness - 1
                     for neigh in comp[n].keys():
                         if neigh in cutpoints:
-                            g.add_edge(n, neigh, {'weight': 1})  # TODO weight
+                            g.add_edge(n, neigh, weight=1)  # TODO weight
                         else:
                             for k, v in component_dict.items():
                                 if neigh in v:
-                                    g.add_edge(n, k, {'weight': 1})  # TODO weight
+                                    g.add_edge(n, k, weight=1)  # TODO weight
                     g.node[n]["robustness"] = 10 - int(10*float(robustness) /
                                                        len(comp))
                     g.node[n]["style"] = "cutpoint_" +\
@@ -86,22 +117,20 @@ class ParsedGraph():
             for n, data in g.nodes(data=True):
                 tobemerged = []
                 mergesize = 0
-                if data["type"] == "cutpoint":
+                if data["type"] == "cutpoint" or data["type"] == "cutpoint_gateway":
                     for (neigh, ndata) in g[n].items():
                         if g.node[neigh]["type"] == "block" and \
-                           len(g[neigh]) == 1:
+                        len(g[neigh]) == 1:
                             tobemerged.append(neigh)
                             mergesize += g.node[neigh]["nodes in block"]
                 if len(tobemerged) > 1:
                     nodes = " ".join([g.node[y]["nodes"] for y in tobemerged])
-                    g.add_node(i, {"nodes": nodes,
-                                   "nodes in block": mergesize,
-                                   "radius": max(int(self.max_node_size *
-                                                 float(len(tobemerged)) /
-                                                 max_component_size),
-                                                 self.min_node_size),
-                                   "type": "block"})
-                    g.add_edge(i, n, {"weight": 1})  # TODO need weight here
+                    g.add_node(i)
+                    g.node[i]["nodes"] = nodes
+                    g.node[i]["nodes in block"] = mergesize
+                    g.node[i]["radius"] = (max(int(self.max_node_size * float(len(tobemerged)) / max_component_size), self.min_node_size))
+                    g.node[i]["type"] = "block"
+                    g.add_edge(i, n, weight=1)  # TODO need weight here
                     i += 1
                     for n in tobemerged:
                         g.remove_node(n)
