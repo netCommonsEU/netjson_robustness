@@ -60,6 +60,8 @@ class ParsedGraph():
                                                     self.min_node_size)
                     g.node[node_id]["type"] = "block"
 
+                dataJson = json.loads(self.netJSON.json())
+
                 for n in cutpoints:
                     temp_g = comp.copy()
                     temp_g.remove_node(n)
@@ -72,12 +74,11 @@ class ParsedGraph():
                     for com in connected_components2:
                         nodes2 = com.nodes()
                         x = False
-                        dataJson = json.loads(self.netJSON.json())
                         for node2 in nodes2:
-                            for k in range(1,len(g.nodes())):
+                            for k in range(0,len(g.nodes())):
                                 if g.nodes.values()[k].has_key("nodes"):
                                     if g.nodes.values()[k]['nodes'] == node2:
-                                        for i in range(1,len(dataJson["nodes"])):
+                                        for i in range(0,len(dataJson["nodes"])):
                                             if dataJson["nodes"][i].has_key("id") and dataJson["nodes"][i].has_key("properties") and dataJson["nodes"][i]["properties"].has_key("gateway"):
                                                 if dataJson["nodes"][i]["id"] == node2:
                                                     if dataJson["nodes"][i]["properties"]["gateway"] == "true":

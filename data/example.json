@@ -1,0 +1,39 @@
+{
+    "type": "NetworkGraph",
+    "label": "Example",
+    "protocol": "OLSR",
+    "version": "0.6.6.2",
+    "metric": "ETX",
+    "nodes": [
+        {
+            "id": "10.0.0.1",
+            "properties": {
+                "gateway": "true"
+            }
+        },
+        {
+            "id": "10.0.0.2",
+            "properties": {
+                "gateway": "false"
+            }
+        },
+        {
+            "id": "10.0.0.3",
+            "properties": {
+                "gateway": "true"
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "10.0.0.1",
+            "target": "10.0.0.2",
+            "cost": 1.2939453125
+        },
+        {
+            "source": "10.0.0.2",
+            "target": "10.0.0.3",
+            "cost": 1.5
+        }
+    ]
+}
