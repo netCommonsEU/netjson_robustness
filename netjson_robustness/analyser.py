@@ -75,15 +75,12 @@ class ParsedGraph():
                         nodes2 = com.nodes()
                         x = False
                         for node2 in nodes2:
-                            for k in range(0,len(g.nodes())):
-                                if g.nodes.values()[k].has_key("nodes"):
-                                    if g.nodes.values()[k]['nodes'] == node2:
-                                        for i in range(0,len(dataJson["nodes"])):
-                                            if dataJson["nodes"][i].has_key("id") and dataJson["nodes"][i].has_key("properties") and dataJson["nodes"][i]["properties"].has_key("gateway"):
-                                                if dataJson["nodes"][i]["id"] == node2:
-                                                    if dataJson["nodes"][i]["properties"]["gateway"] == "true":
-                                                        x = True
-                                                        break
+                            for i in range(0,len(dataJson["nodes"])):
+                                if dataJson["nodes"][i].has_key("id") and dataJson["nodes"][i].has_key("properties") and dataJson["nodes"][i]["properties"].has_key("gateway"):
+                                    if dataJson["nodes"][i]["id"] == node2:
+                                        if dataJson["nodes"][i]["properties"]["gateway"] == "true":
+                                            x = True
+                                            break
                             if x == True: break
 
                         if x == False:
