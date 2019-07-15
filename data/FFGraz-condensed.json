@@ -1,0 +1,1693 @@
+{
+    "type": "NetworkGraph",
+    "protocol": "FFGraz",
+    "version": "0.6.6.2",
+    "revision": null,
+    "metric": "ETX",
+    "nodes": [
+        {
+            "id": "1789",
+            "properties": {
+                "Potential disconnected nodes": 10,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1301",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "Block 9",
+            "properties": {
+                "nodes in block": 3,
+                "nodes": "1690 1659 1554",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 29",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1812",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 28",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1211",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "2091",
+            "properties": {
+                "Potential disconnected nodes": 4,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "Block 23",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1793",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 22",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1809",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 21",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "2043",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 20",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1679",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 27",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1610",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 26",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1791",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 25",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1386",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 24",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1983",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "1770",
+            "properties": {
+                "Potential disconnected nodes": 2,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1959",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1469",
+            "properties": {
+                "Potential disconnected nodes": 2,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1758",
+            "properties": {
+                "Potential disconnected nodes": 2,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1797",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1796",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1795",
+            "properties": {
+                "Potential disconnected nodes": 2,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1955",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1956",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "Block 18",
+            "properties": {
+                "nodes in block": 2,
+                "nodes": "1340 1545",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 19",
+            "properties": {
+                "nodes in block": 2,
+                "nodes": "1535 1641",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 16",
+            "properties": {
+                "nodes in block": 2,
+                "nodes": "1485 1463",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 17",
+            "properties": {
+                "nodes in block": 2,
+                "nodes": "2096 1801",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 14",
+            "properties": {
+                "nodes in block": 2,
+                "nodes": "1578 1774",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 15",
+            "properties": {
+                "nodes in block": 2,
+                "nodes": "1964 2101",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 12",
+            "properties": {
+                "nodes in block": 2,
+                "nodes": "1852 1745",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 13",
+            "properties": {
+                "nodes in block": 2,
+                "nodes": "1903 1856",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 10",
+            "properties": {
+                "nodes in block": 3,
+                "nodes": "1174 1544 1696",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 11",
+            "properties": {
+                "nodes in block": 2,
+                "nodes": "1907 2090",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "1559",
+            "properties": {
+                "Potential disconnected nodes": 2,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1407",
+            "properties": {
+                "Potential disconnected nodes": 2,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1824",
+            "properties": {
+                "Potential disconnected nodes": 4,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "2060",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1411",
+            "properties": {
+                "Potential disconnected nodes": 2,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "Block 4",
+            "properties": {
+                "nodes in block": 7,
+                "nodes": "1422 1728 1310 1634 2021 2024 1977",
+                "radius": 5,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 5",
+            "properties": {
+                "nodes in block": 6,
+                "nodes": "2112 2110 2098 1501 1695 1497",
+                "radius": 4,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 6",
+            "properties": {
+                "nodes in block": 4,
+                "nodes": "1746 1761 1592 1816",
+                "radius": 3,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 7",
+            "properties": {
+                "nodes in block": 3,
+                "nodes": "2047 1327 2044",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 0",
+            "properties": {
+                "nodes in block": 95,
+                "nodes": "1546 1948 1776 1697 1943 1779 1548 1464 1672 1317 1701 1702 1821 1416 1323 1976 1324 1925 1929 1713 1257 2078 1515 1949 2046 1849 1432 1643 1724 1847 1648 1721 1638 1531 1580 1349 1225 1341 1876 1877 1873 1633 1902 1986 1423 1985 1636 1582 1733 1988 1989 2111 1210 1865 1867 1866 1910 1598 1990 1995 1999 1831 2109 2108 2023 2103 1516 1740 2105 1814 1815 1810 1617 1613 2036 2030 1755 1754 1279 1175 2042 1277 1888 1968 1884 1807 2082 2083 1457 2086 2087 2084 2007 2005 1571",
+                "radius": 74,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 1",
+            "properties": {
+                "nodes in block": 8,
+                "nodes": "1853 2099 1778 1677 1678 1967 1221 1685",
+                "radius": 6,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 2",
+            "properties": {
+                "nodes in block": 8,
+                "nodes": "1844 1736 1918 2064 1784 1727 1705 1729",
+                "radius": 6,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 3",
+            "properties": {
+                "nodes in block": 7,
+                "nodes": "1826 1735 1854 1730 2013 2027 1359",
+                "radius": 4,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 8",
+            "properties": {
+                "nodes in block": 3,
+                "nodes": "1529 1603 1361",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "1855",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "2079",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1656",
+            "properties": {
+                "Potential disconnected nodes": 3,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1384",
+            "properties": {
+                "Potential disconnected nodes": 4,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1837",
+            "properties": {
+                "Potential disconnected nodes": 2,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1644",
+            "properties": {
+                "Potential disconnected nodes": 12,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1845",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1246",
+            "properties": {
+                "Potential disconnected nodes": 5,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1345",
+            "properties": {
+                "Potential disconnected nodes": 2,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1901",
+            "properties": {
+                "Potential disconnected nodes": 6,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1738",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1424",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1507",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1861",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1914",
+            "properties": {
+                "Potential disconnected nodes": 2,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1998",
+            "properties": {
+                "Potential disconnected nodes": 3,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1454",
+            "properties": {
+                "Potential disconnected nodes": 4,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1517",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "2104",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "Block 45",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1798",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 44",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1962",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 47",
+            "properties": {
+                "nodes in block": 2,
+                "nodes": "1421 1575",
+                "radius": 100,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 46",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1646",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 41",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1493",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 40",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1299",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 43",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1237",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 42",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1743",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "1898",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1890",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1619",
+            "properties": {
+                "Potential disconnected nodes": 12,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "2035",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1691",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1753",
+            "properties": {
+                "Potential disconnected nodes": 3,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1176",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "Block 38",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1832",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 39",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1947",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 30",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1900",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 31",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1605",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 32",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1911",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 33",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1788",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 34",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1748",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 35",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1200",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 36",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "1596",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "Block 37",
+            "properties": {
+                "nodes in block": 1,
+                "nodes": "2057",
+                "radius": 2,
+                "type": "block"
+            }
+        },
+        {
+            "id": "1286",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1979",
+            "properties": {
+                "Potential disconnected nodes": 14,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1714",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1604",
+            "properties": {
+                "Potential disconnected nodes": 1,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1479",
+            "properties": {
+                "Potential disconnected nodes": 3,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        },
+        {
+            "id": "1767",
+            "properties": {
+                "Potential disconnected nodes": 2,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint"
+            }
+        },
+        {
+            "id": "1574",
+            "properties": {
+                "Potential disconnected nodes": 3,
+                "radius": 5,
+                "style": "cutpoint_1",
+                "robustness": 1,
+                "type": "cutpoint_gateway"
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "1789",
+            "target": "1454",
+            "cost": 1
+        },
+        {
+            "source": "1789",
+            "target": "Block 3",
+            "cost": 1
+        },
+        {
+            "source": "1789",
+            "target": "Block 0",
+            "cost": 1
+        },
+        {
+            "source": "1789",
+            "target": "1345",
+            "cost": 1
+        },
+        {
+            "source": "1789",
+            "target": "1619",
+            "cost": 1
+        },
+        {
+            "source": "1301",
+            "target": "1454",
+            "cost": 1
+        },
+        {
+            "source": "1301",
+            "target": "Block 39",
+            "cost": 1
+        },
+        {
+            "source": "1301",
+            "target": "Block 0",
+            "cost": 1
+        },
+        {
+            "source": "Block 9",
+            "target": "1753",
+            "cost": 1
+        },
+        {
+            "source": "Block 29",
+            "target": "1845",
+            "cost": 1
+        },
+        {
+            "source": "Block 28",
+            "target": "1691",
+            "cost": 1
+        },
+        {
+            "source": "2091",
+            "target": "1738",
+            "cost": 1
+        },
+        {
+            "source": "2091",
+            "target": "2079",
+            "cost": 1
+        },
+        {
+            "source": "2091",
+            "target": "Block 0",
+            "cost": 1
+        },
+        {
+            "source": "2091",
+            "target": "Block 11",
+            "cost": 1
+        },
+        {
+            "source": "Block 23",
+            "target": "1796",
+            "cost": 1
+        },
+        {
+            "source": "Block 22",
+            "target": "1738",
+            "cost": 1
+        },
+        {
+            "source": "Block 21",
+            "target": "1714",
+            "cost": 1
+        },
+        {
+            "source": "Block 20",
+            "target": "1797",
+            "cost": 1
+        },
+        {
+            "source": "Block 27",
+            "target": "1898",
+            "cost": 1
+        },
+        {
+            "source": "Block 26",
+            "target": "1824",
+            "cost": 1
+        },
+        {
+            "source": "Block 26",
+            "target": "1469",
+            "cost": 1
+        },
+        {
+            "source": "Block 25",
+            "target": "1507",
+            "cost": 1
+        },
+        {
+            "source": "Block 24",
+            "target": "1955",
+            "cost": 1
+        },
+        {
+            "source": "1770",
+            "target": "Block 0",
+            "cost": 1
+        },
+        {
+            "source": "1770",
+            "target": "1890",
+            "cost": 1
+        },
+        {
+            "source": "1770",
+            "target": "Block 12",
+            "cost": 1
+        },
+        {
+            "source": "1770",
+            "target": "1714",
+            "cost": 1
+        },
+        {
+            "source": "1959",
+            "target": "1644",
+            "cost": 1
+        },
+        {
+            "source": "1959",
+            "target": "1959",
+            "cost": 1
+        },
+        {
+            "source": "1959",
+            "target": "Block 44",
+            "cost": 1
+        },
+        {
+            "source": "1469",
+            "target": "1824",
+            "cost": 1
+        },
+        {
+            "source": "1469",
+            "target": "1898",
+            "cost": 1
+        },
+        {
+            "source": "1758",
+            "target": "1407",
+            "cost": 1
+        },
+        {
+            "source": "1758",
+            "target": "Block 0",
+            "cost": 1
+        },
+        {
+            "source": "1758",
+            "target": "Block 13",
+            "cost": 1
+        },
+        {
+            "source": "1758",
+            "target": "1758",
+            "cost": 1
+        },
+        {
+            "source": "1797",
+            "target": "1914",
+            "cost": 1
+        },
+        {
+            "source": "1796",
+            "target": "1795",
+            "cost": 1
+        },
+        {
+            "source": "1795",
+            "target": "1795",
+            "cost": 1
+        },
+        {
+            "source": "1795",
+            "target": "1979",
+            "cost": 1
+        },
+        {
+            "source": "1955",
+            "target": "1384",
+            "cost": 1
+        },
+        {
+            "source": "1955",
+            "target": "Block 0",
+            "cost": 1
+        },
+        {
+            "source": "1956",
+            "target": "Block 32",
+            "cost": 1
+        },
+        {
+            "source": "1956",
+            "target": "1574",
+            "cost": 1
+        },
+        {
+            "source": "Block 18",
+            "target": "1384",
+            "cost": 1
+        },
+        {
+            "source": "Block 18",
+            "target": "1507",
+            "cost": 1
+        },
+        {
+            "source": "Block 19",
+            "target": "1559",
+            "cost": 1
+        },
+        {
+            "source": "Block 16",
+            "target": "1345",
+            "cost": 1
+        },
+        {
+            "source": "Block 17",
+            "target": "1767",
+            "cost": 1
+        },
+        {
+            "source": "Block 14",
+            "target": "1407",
+            "cost": 1
+        },
+        {
+            "source": "Block 15",
+            "target": "1411",
+            "cost": 1
+        },
+        {
+            "source": "Block 10",
+            "target": "1479",
+            "cost": 1
+        },
+        {
+            "source": "1559",
+            "target": "1559",
+            "cost": 1
+        },
+        {
+            "source": "1559",
+            "target": "Block 0",
+            "cost": 1
+        },
+        {
+            "source": "1559",
+            "target": "1691",
+            "cost": 1
+        },
+        {
+            "source": "1407",
+            "target": "1407",
+            "cost": 1
+        },
+        {
+            "source": "1407",
+            "target": "Block 0",
+            "cost": 1
+        },
+        {
+            "source": "1824",
+            "target": "Block 0",
+            "cost": 1
+        },
+        {
+            "source": "1824",
+            "target": "2035",
+            "cost": 1
+        },
+        {
+            "source": "1824",
+            "target": "1824",
+            "cost": 1
+        },
+        {
+            "source": "2060",
+            "target": "Block 30",
+            "cost": 1
+        },
+        {
+            "source": "2060",
+            "target": "2060",
+            "cost": 1
+        },
+        {
+            "source": "2060",
+            "target": "Block 0",
+            "cost": 1
+        },
+        {
+            "source": "2060",
+            "target": "1979",
+            "cost": 1
+        },
+        {
+            "source": "1411",
+            "target": "Block 0",
+            "cost": 1
+        },
+        {
+            "source": "Block 4",
+            "target": "1619",
+            "cost": 1
+        },
+        {
+            "source": "Block 5",
+            "target": "1901",
+            "cost": 1
+        },
+        {
+            "source": "Block 6",
+            "target": "1454",
+            "cost": 1
+        },
+        {
+            "source": "Block 7",
+            "target": "1656",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "2104",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "1753",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "1890",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "1901",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "1714",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "1855",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "2035",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "1691",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "1384",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "2079",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "1424",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "1644",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "1656",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "1998",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "1979",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "1619",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "1454",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "1246",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "1517",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "1479",
+            "cost": 1
+        },
+        {
+            "source": "Block 0",
+            "target": "1574",
+            "cost": 1
+        },
+        {
+            "source": "Block 1",
+            "target": "1644",
+            "cost": 1
+        },
+        {
+            "source": "Block 2",
+            "target": "1979",
+            "cost": 1
+        },
+        {
+            "source": "Block 8",
+            "target": "1246",
+            "cost": 1
+        },
+        {
+            "source": "1855",
+            "target": "Block 31",
+            "cost": 1
+        },
+        {
+            "source": "1855",
+            "target": "1691",
+            "cost": 1
+        },
+        {
+            "source": "2079",
+            "target": "2079",
+            "cost": 1
+        },
+        {
+            "source": "2079",
+            "target": "Block 35",
+            "cost": 1
+        },
+        {
+            "source": "2079",
+            "target": "1619",
+            "cost": 1
+        },
+        {
+            "source": "1656",
+            "target": "1890",
+            "cost": 1
+        },
+        {
+            "source": "1656",
+            "target": "1656",
+            "cost": 1
+        },
+        {
+            "source": "1384",
+            "target": "1507",
+            "cost": 1
+        },
+        {
+            "source": "1837",
+            "target": "1604",
+            "cost": 1
+        },
+        {
+            "source": "1837",
+            "target": "1979",
+            "cost": 1
+        },
+        {
+            "source": "1837",
+            "target": "1837",
+            "cost": 1
+        },
+        {
+            "source": "1644",
+            "target": "1644",
+            "cost": 1
+        },
+        {
+            "source": "1644",
+            "target": "1890",
+            "cost": 1
+        },
+        {
+            "source": "1644",
+            "target": "1861",
+            "cost": 1
+        },
+        {
+            "source": "1644",
+            "target": "2035",
+            "cost": 1
+        },
+        {
+            "source": "1845",
+            "target": "1619",
+            "cost": 1
+        },
+        {
+            "source": "1246",
+            "target": "1454",
+            "cost": 1
+        },
+        {
+            "source": "1246",
+            "target": "1286",
+            "cost": 1
+        },
+        {
+            "source": "1246",
+            "target": "1246",
+            "cost": 1
+        },
+        {
+            "source": "1345",
+            "target": "1345",
+            "cost": 1
+        },
+        {
+            "source": "1901",
+            "target": "1979",
+            "cost": 1
+        },
+        {
+            "source": "1738",
+            "target": "1738",
+            "cost": 1
+        },
+        {
+            "source": "1424",
+            "target": "Block 38",
+            "cost": 1
+        },
+        {
+            "source": "1507",
+            "target": "1507",
+            "cost": 1
+        },
+        {
+            "source": "1861",
+            "target": "Block 45",
+            "cost": 1
+        },
+        {
+            "source": "1914",
+            "target": "1454",
+            "cost": 1
+        },
+        {
+            "source": "1914",
+            "target": "1914",
+            "cost": 1
+        },
+        {
+            "source": "1914",
+            "target": "1979",
+            "cost": 1
+        },
+        {
+            "source": "1914",
+            "target": "1619",
+            "cost": 1
+        },
+        {
+            "source": "1998",
+            "target": "1176",
+            "cost": 1
+        },
+        {
+            "source": "1998",
+            "target": "Block 41",
+            "cost": 1
+        },
+        {
+            "source": "1998",
+            "target": "1479",
+            "cost": 1
+        },
+        {
+            "source": "1998",
+            "target": "1998",
+            "cost": 1
+        },
+        {
+            "source": "1517",
+            "target": "1517",
+            "cost": 1
+        },
+        {
+            "source": "1517",
+            "target": "Block 37",
+            "cost": 1
+        },
+        {
+            "source": "2104",
+            "target": "Block 43",
+            "cost": 1
+        },
+        {
+            "source": "2104",
+            "target": "1619",
+            "cost": 1
+        },
+        {
+            "source": "Block 46",
+            "target": "2035",
+            "cost": 1
+        },
+        {
+            "source": "Block 40",
+            "target": "1176",
+            "cost": 1
+        },
+        {
+            "source": "Block 42",
+            "target": "1890",
+            "cost": 1
+        },
+        {
+            "source": "1890",
+            "target": "1714",
+            "cost": 1
+        },
+        {
+            "source": "1890",
+            "target": "1890",
+            "cost": 1
+        },
+        {
+            "source": "1619",
+            "target": "1979",
+            "cost": 1
+        },
+        {
+            "source": "1619",
+            "target": "1767",
+            "cost": 1
+        },
+        {
+            "source": "2035",
+            "target": "2035",
+            "cost": 1
+        },
+        {
+            "source": "1753",
+            "target": "1753",
+            "cost": 1
+        },
+        {
+            "source": "1176",
+            "target": "1176",
+            "cost": 1
+        },
+        {
+            "source": "Block 33",
+            "target": "1574",
+            "cost": 1
+        },
+        {
+            "source": "Block 34",
+            "target": "1286",
+            "cost": 1
+        },
+        {
+            "source": "Block 36",
+            "target": "1604",
+            "cost": 1
+        },
+        {
+            "source": "1286",
+            "target": "1286",
+            "cost": 1
+        },
+        {
+            "source": "1979",
+            "target": "1979",
+            "cost": 1
+        },
+        {
+            "source": "1979",
+            "target": "1479",
+            "cost": 1
+        },
+        {
+            "source": "1714",
+            "target": "1714",
+            "cost": 1
+        },
+        {
+            "source": "1479",
+            "target": "1479",
+            "cost": 1
+        },
+        {
+            "source": "1574",
+            "target": "1574",
+            "cost": 1
+        }
+    ]
+}
