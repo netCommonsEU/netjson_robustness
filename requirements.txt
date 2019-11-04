@@ -9,6 +9,6 @@ libcnml==0.9.5
 netdiff==0.5.1
 networkx==1.11
 openvpn-status==0.1.1
-requests==2.18.4
+requests==2.20.0
 six==1.11.0
 urllib3==1.22
